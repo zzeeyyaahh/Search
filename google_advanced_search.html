@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Advanced Search</title> 
+        <style>
+            
+            .search{
+                margin: 32px;
+                
+            }
+
+            .field{
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 20px; 
+                
+            }
+            .main{
+                width:780px ;
+                display: flex;
+                flex-direction: row;
+            }
+            .headings{
+                display: flex;
+                flex-direction: row;
+                gap: 640px;
+            }
+            body{
+                font-family: sans-serif;
+                
+            }
+            label{
+                width: 170px;
+                font-size: small;
+                
+            }
+            
+            input[type="text"]{
+                padding: 6px;
+                border: 1px solid lightgray;
+                border-top: 1px solid rgb(177, 172, 172);   
+                width: 580px;
+            }
+
+            label[for="example"]{
+                width: 400px;
+                color: gray;
+                font-size: 12px;
+            }
+
+            input[type="text"]:focus {
+                border-color:#4285F4;
+                outline: none;       
+                box-shadow: 0 0 2px #4285F4;
+            }
+            h2{
+                font-size: 22px;
+                margin: 32px;
+                color: #eb5252; 
+                font-weight: lighter;
+            }
+            h4{
+                font-weight: lighter;  
+                margin-bottom: 30px;
+            }
+            h5{
+                color: grey;
+            }
+            input[type="submit"]{
+                margin: 0 620px;
+                background-color: #4285F4;
+                color: white;
+                height: 40px;
+                padding-inline: 20px;
+                border:1px  #bbb;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1),
+                            -2px -2px 5px rgba(0, 0, 0, 0.1);
+            }
+            .top{
+                display: flex;
+                flex-direction: row; 
+            }
+            a{
+                font-family:auto ;
+                position: relative;
+                left: 85%;
+                display:flex;
+                padding: 15px;
+                color: inherit;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="top">
+            <img src="https://freelogopng.com/images/all_img/1657952217google-logo-png.png" alt="google logo" width="75px" height="auto" style="padding: 10px;">
+            <a href="google_search.html">Google Search</a>
+        </div>
+        <h2>Advanced Search</h2>
+        <hr style="border: none; border-top: 1px solid lightgrey; margin: 10px 0; margin-bottom: 37px;">
+        <div class="search">
+            <div class="headings">
+                <h4>Find pages with...</h4>
+                <h5>To do this in the search box.</h5>
+            </div>
+            <form action="https://www.google.com/search" method="GET">
+
+                
+                <div class="field">
+                    <div class="main">
+                        <label for="allWords">all these words:</label><br>
+                        <input type="text" id="allWords" name="as_q"><br>
+                    </div>
+                    <label for="example">Type the important words: tri-colour rat terrier</label>
+                </div>
+
+
+                <div class="field">
+                    <div class="main">
+                        <label for="exactPhrase">this exact word or phrase:</label><br>
+                        <input type="text" id="exactPhrase" name="as_epq"><br>
+                    </div>
+                    <label for="example">Put exact words in quotes: "rat terrier"</label>
+                </div>
+
+
+                <div class="field">
+                    <div class="main">
+                        <label for="anyWords">any of these words:</label><br>
+                        <input type="text" id="anyWords" name="as_oq"><br>
+                    </div>
+                    <label for="example">Type OR between all the words you want: miniature OR standard</label>
+                </div>
+
+
+                <div class="field">
+                    <div class="main">
+                        <label for="noneWords">none of these words:</label><br>
+                        <input type="text" id="noneWords" name="as_eq"><br>
+                    </div>
+                    <label for="example">Put a minus sign just before words that you don't want:<br> -rodent, -"Jack Russell"</label>
+                </div>
+        
+                
+                <input type="submit" value="Advanced Search">
+                
+
+            </form>
+        </div>
+        
+        
+
+    </body>
+</html>
